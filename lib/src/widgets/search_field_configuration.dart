@@ -115,13 +115,13 @@ class TextFieldConfiguration {
   /// Called when the text being edited changes.
   ///
   /// Same as [TextField.onChanged](https://docs.flutter.io/flutter/material/TextField/onChanged.html)
-  final ValueChanged<String>? onChanged;
+  final ValueChanged<String?>? onChanged;
 
   /// Called when the user indicates that they are done editing the text in the
   /// field.
   ///
   /// Same as [TextField.onSubmitted](https://docs.flutter.io/flutter/material/TextField/onSubmitted.html)
-  final ValueChanged<String>? onSubmitted;
+  final ValueChanged<String?>? onSubmitted;
 
   /// The color to use when painting the cursor.
   ///
@@ -224,8 +224,8 @@ class TextFieldConfiguration {
       {InputDecoration? decoration,
       TextStyle? style,
       TextEditingController? controller,
-      ValueChanged<String>? onChanged,
-      ValueChanged<String>? onSubmitted,
+      ValueChanged<String?>? onChanged,
+      ValueChanged<String?>? onSubmitted,
       bool? obscureText,
       MaxLengthEnforcement? maxLengthEnforcement,
       int? maxLength,
