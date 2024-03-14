@@ -67,6 +67,7 @@ class DropDownSearchFormField<T> extends FormField<String> {
     bool hideKeyboard = false,
     int minCharsForSuggestions = 0,
     bool hideKeyboardOnDrag = false,
+    required String name,
     bool displayAllSuggestionWhenTap = false,
   })  : assert(
             initialValue == null || textFieldConfiguration.controller == null),
@@ -80,6 +81,7 @@ class DropDownSearchFormField<T> extends FormField<String> {
                   field as _DropdownSearchFormFieldState<dynamic>;
 
               return DropDownSearchField(
+                name: name,
                 getImmediateSuggestions: getImmediateSuggestions,
                 transitionBuilder: transitionBuilder,
                 errorBuilder: errorBuilder,
